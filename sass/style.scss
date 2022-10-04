@@ -28,16 +28,27 @@ $font-size-text: 18px;
     margin: 0 auto;
 }
 
+section {
+    padding: 110px 0;
+}
+
 .btn {
     font-size: $font-size-menuAndBtn;
     color: $color-white;
     border-radius: 24px;
     border: 2px solid #ffffff;
-    padding: 20px 50px;
+    padding: 18px 50px;
     font-family: 'Raleway', sans-serif;
-
+    background-color: $color-green;
 }
 
+.btn-first {
+    background-color: transparent;
+}
+
+.btn-middle {
+    text-align: center;
+}
 
 a {
     text-decoration: none;
@@ -51,6 +62,7 @@ a {
     height: 1068px;
     color: $color-white;
     position: relative;
+    margin: 0 auto;
 }
 
 .splash::after {
@@ -160,3 +172,92 @@ a {
     }
 }
 
+/* About */
+
+.title {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-size-h1;
+    font-weight: 200;
+    color: $color-heading;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    line-height: normal;
+    position: relative;
+}
+
+.section-title::after {
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    content: '';
+    background: $color-green;
+    left: 50%;
+    top: 90px;
+    transform: translateX(-50%);
+}
+
+.section-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-size-text;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.45px;
+    line-height: normal;
+}
+
+.card {
+    margin: 155px 0 110px 0;
+}
+
+.card h2 {
+    font-size: $font-size-h2;
+    font-weight: 400;
+    color: $color-black;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 96px;
+    text-align: center;
+
+}
+
+.card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-size-text;
+    font-weight: 400;
+    color: $color-text;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
+
+}
+
+.icon i {
+    width: 182px;
+    height: 182px;
+    border-radius: 182px;
+    line-height: 182px;
+    background-color: #87949e26;
+    color: $color-text;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+.icon .green {
+    background-color: $color-green;
+    color: $color-white;
+}
