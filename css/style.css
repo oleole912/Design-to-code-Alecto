@@ -1,3 +1,132 @@
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  max-width: 1433px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 24px;
+  border: 2px solid #ffffff;
+  padding: 20px 50px;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.splash {
+  background-image: url("/images/splash.jpg");
+  width: 2000px;
+  height: 1068px;
+  color: #ffffff;
+  position: relative;
+}
+
+.splash::after {
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.55;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  z-index: 2;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+}
+.nav ul li {
+  font-style: normal;
+  letter-spacing: 0.35px;
+  line-height: normal;
+}
+.nav ul a {
+  color: #ffffff;
+  font-size: 14px;
+  padding-left: 65px;
+}
+.nav ul a:hover {
+  color: #17daa3;
+}
+
+.nav-logo {
+  font-size: 36px;
+  z-index: 2;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+}
+.nav-logo p {
+  font-style: normal;
+  letter-spacing: 0.9px;
+  line-height: normal;
+}
+.nav-logo span {
+  color: #17daa3;
+  font-size: 60px;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  line-height: normal;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+.splash-inner h1 {
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  line-height: normal;
+}
+.splash-inner h1 span {
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  line-height: normal;
+}
+.splash-inner p {
+  font-size: 24px;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.6px;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBRUE7RUFDSSxzQkFBQTtBQ0FKOztBREdBO0VBQ0ksU0FBQTtBQ0FKOztBRGtCQTtFQUNJLGlCQUFBO0VBQ0EsY0FBQTtBQ2ZKOztBRGtCQTtFQUNJLGVBYm1CO0VBY25CLGNBdEJVO0VBdUJWLG1CQUFBO0VBQ0EseUJBQUE7RUFDQSxrQkFBQTtFQUNBLGtDQUFBO0FDZko7O0FEb0JBO0VBQ0kscUJBQUE7QUNqQko7O0FEb0JBLFdBQUE7QUFFQTtFQUNJLDJDQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7RUFDQSxjQXpDVTtFQTBDVixrQkFBQTtBQ2xCSjs7QURxQkE7RUFDSSxrQkFBQTtFQUNBLHlCQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLE1BQUE7RUFDQSxVQUFBO0FDbEJKOztBRHFCQTtFQUNJLGFBQUE7RUFDQSw4QkFBQTtBQ2xCSjtBRG9CSTtFQUNJLHFCQUFBO0VBQ0EsYUFBQTtFQUNBLFVBQUE7RUFDQSxrQ0FBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxzQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSx5QkFBQTtFQUNBLG1CQUFBO0FDbEJSO0FEb0JRO0VBRUksa0JBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0FDbkJaO0FEc0JRO0VBQ0ksY0FqRkU7RUFrRkYsZUExRVc7RUEyRVgsa0JBQUE7QUNwQlo7QUR1QlE7RUFDSSxjQW5GRTtBQzhEZDs7QUQyQkE7RUFDSSxlQXZGYTtFQXdGYixVQUFBO0VBQ0Esa0JBQUE7RUFDQSxzQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUN4Qko7QUQwQkk7RUFDSSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0EsbUJBQUE7QUN4QlI7QUQyQkk7RUFDSSxjQXhHTTtFQXlHTixlQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQkFBQTtFQUNBLG1CQUFBO0FDekJSOztBRDZCQTtFQUNJLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLFFBQUE7RUFDQSxTQUFBO0VBQ0EsZ0NBQUE7RUFDQSxrQkFBQTtFQUNBLFVBQUE7QUMxQko7QUQ0Qkk7RUFDSSxlQXJITztFQXNIUCxrQ0FBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQkFBQTtFQUNBLG1CQUFBO0FDMUJSO0FENEJRO0VBQ0ksZ0JBQUE7RUFDQSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0EsbUJBQUE7QUMxQlo7QUQrQkk7RUFDSSxlQXJJYTtFQXNJYixtQkFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQkFBQTtFQUNBLG1CQUFBO0FDN0JSIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
