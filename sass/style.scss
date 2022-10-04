@@ -26,10 +26,13 @@ $font-size-text: 18px;
 .container {
     max-width: 1433px;
     margin: 0 auto;
+    position: relative;
 }
 
 section {
     padding: 110px 0;
+    width: 2000px;
+    margin: 0;
 }
 
 .btn {
@@ -62,7 +65,6 @@ a {
     height: 1068px;
     color: $color-white;
     position: relative;
-    margin: 0 auto;
 }
 
 .splash::after {
@@ -194,7 +196,7 @@ a {
     position: relative;
 }
 
-.section-title::after {
+.title-main::after {
     position: absolute;
     width: 30px;
     height: 1px;
@@ -261,3 +263,39 @@ a {
     background-color: $color-green;
     color: $color-white;
 }
+
+/* Section second and third */
+
+.section-middle {
+    height: 700px;
+}
+
+.section-middle p {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-size-text;
+    font-weight: 400;
+    color: $color-text;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: left;
+    padding-bottom: 75px;
+}
+
+.section-second {
+    background-color: #edeff159;
+}
+
+.right {
+    position: absolute;
+    width: 50%;
+    right: 0px;
+}
+
+.left {
+    position: absolute;
+    width: 50%;
+    left: 0px;
+}
+
