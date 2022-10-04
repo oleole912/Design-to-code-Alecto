@@ -299,3 +299,50 @@ a {
     left: 0px;
 }
 
+/* Section splash */
+
+.section-splash1 {
+    background-image: url('/images/section_splash1.jpg');
+    padding-top: 180px;
+
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: $font-size-h2;
+        font-weight: 300;
+        color: $color-white;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 96px;
+        text-align: center;
+    }
+
+    span {
+        color: $color-green;
+        font-style: normal;
+        letter-spacing: 0.75px;
+        line-height: normal;
+    }
+
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-size: $font-size-text;
+        font-weight: 300;
+        color: #ffffff4C;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .section-splash-photo {
+        text-align: center;
+    }
+
+    img {
+        width: 104px;
+        height: 104px;
+        border-radius: 104px;
+    }
+}
+
+
