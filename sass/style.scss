@@ -38,7 +38,7 @@ section {
 .btn {
     font-size: $font-size-menuAndBtn;
     color: $color-white;
-    border-radius: 24px;
+    border-radius: 30px;
     border: 2px solid #ffffff;
     padding: 18px 50px;
     font-family: 'Raleway', sans-serif;
@@ -506,4 +506,32 @@ a.card-btn {
     height: 11px;
     width: 11px;
 
+}
+
+/* Section splash2 */
+
+.section-splash2 {
+    background-image: url('/images/section_splash2.jpg');
+    padding-top: 180px;
+
+    h1 {
+        color: $color-white;
+        font-family: 'Raleway', sans-serif;
+        font-size: $font-size-h1;
+        font-weight: 200;
+        font-style: normal;
+        letter-spacing: 1.5px;
+        line-height: 96px;
+        text-align: center;
+        margin: 70px 0 110px;
+    }
+
+    span {
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .btn-splash2 {
+        border: 2px solid $color-green;
+    }
 }
