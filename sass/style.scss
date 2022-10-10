@@ -380,4 +380,115 @@ a {
     display: flex;
 }
 
+/* Pricing */
 
+.pricing {
+    background-color: #edeff159;
+
+    .content {
+        margin-top: 100px;
+
+        h1 {
+            color: $color-green;
+            font-family: 'Raleway', sans-serif;
+            font-size: $font-size-h1;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 96px;
+            text-align: left;
+            letter-spacing: 1.5px;
+            margin-bottom: 0;
+            }
+
+        p.subtitle {
+            color: #87949e72;
+            font-family: 'Raleway', sans-serif;
+            font-size: $font-size-text;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 96px;
+            text-align: left;
+            letter-spacing: 0.45px;
+        }
+
+        p {
+            color: $color-text;
+            font-family: 'Raleway', sans-serif;
+            font-size: $font-size-text;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 48px;
+            text-align: left;
+            letter-spacing: 0.45px;
+            padding-bottom: 25px;
+        }
+    }
+
+}
+
+.pricing .card {
+    box-shadow: 0 0 35px rgba(227, 227, 227, 0.65);
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 0 12px;
+
+
+}
+
+.card-inner {
+    padding: 0 60px 0 30px;
+}
+
+.card-btn {
+    box-shadow: 0 0 35px rgba(227, 227, 227, 0.35);
+    border-radius: 5px;
+    background-color: $color-green;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 60px 25px 30px;
+    color: $color-white;
+
+    .btn-square, .btn-square i {
+        font-family: 'Raleway', sans-serif;
+        color: $color-white;
+        font-size: $font-size-text;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 48px;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.45px;
+    }
+
+}
+
+a.card-btn {
+    font-family: 'Raleway', sans-serif;
+    color: $color-white;
+    font-size: $font-size-text;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 48px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+
+.card {
+    position: relative;
+}
+
+.card-inner p::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #87949e19;
+    left: 50%;
+    top: 39%;
+    transform: translateX(-50%);
+}
