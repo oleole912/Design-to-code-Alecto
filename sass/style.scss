@@ -492,3 +492,18 @@ a.card-btn {
     top: 39%;
     transform: translateX(-50%);
 }
+
+/* Map */
+
+.map img {
+    position: relative;
+}
+
+.map img::after {
+    position: absolute;
+    content: ' ';
+    background-color: $color-green;
+    height: 11px;
+    width: 11px;
+
+}
