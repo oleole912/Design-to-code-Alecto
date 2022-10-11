@@ -388,6 +388,63 @@ a {
     display: flex;
 }
 
+/* Team */
+
+.team {
+    padding-bottom: 0;
+}
+
+.team-photos {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.image__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    color: $color-white;
+    font-size: $font-size-h2;
+    background-color: #17daa3B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover p {
+    transform: translateY(0);
+}
+
+.image__overlay p {
+    transform: translateY(20px);
+    transition: transform 0.3s;
+}
+
+
+
+
 /* Pricing */
 
 .pricing {
@@ -465,18 +522,6 @@ a {
         padding: 25px 60px 25px 30px;
         color: $color-white;
 
-        /*.btn-square, .btn-square i {
-            font-family: 'Raleway', sans-serif;
-            color: $color-white;
-            font-size: $font-size-text;
-            font-weight: 700;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: 48px;
-            text-align: left;
-            text-transform: uppercase;
-            letter-spacing: 0.45px;
-        }*/
         p {
             margin: 0;
             padding: 0;
@@ -493,25 +538,8 @@ a {
         .btn-icon {
             line-height: 2;
         }
-
     }
-
-
 }
-
-
-/* a.card-btn {
-    font-family: 'Raleway', sans-serif;
-    color: $color-white;
-    font-size: $font-size-text;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 48px;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 0.45px;
-} */
 
 
 /* Map */
