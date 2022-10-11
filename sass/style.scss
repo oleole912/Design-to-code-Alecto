@@ -111,7 +111,6 @@ a {
         a:hover {
             color: $color-green;
         }
-
     }
 }
 
@@ -161,7 +160,6 @@ a {
             letter-spacing: 1.5px;
             line-height: normal;
         }
-
     }
 
     p {
@@ -443,8 +441,6 @@ a {
 }
 
 
-
-
 /* Pricing */
 
 .pricing {
@@ -582,6 +578,80 @@ a {
 
     .btn-splash2 {
         border: 2px solid $color-green;
+    }
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 50px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+
+    display: flex;
+
+    p {
+        color: $color-text;
+        font-family: 'Raleway', sans-serif;
+        font-size: $font-size-text;
+        font-weight: 400;
+        letter-spacing: 0.45px;
+        line-height: 24px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    i {
+        color: $color-green;
+        font-size: 20px;
+        line-height: 24px;
+        border: 1px solid $color-green;
+        border-radius: 24px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+}
+
+
+.footer-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-size-text;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    align-items: center;
+
+    li {
+
+        font-style: normal;
+        letter-spacing: 0.45px;
+        line-height: normal;
+    }
+
+    a {
+        font-family: 'Raleway', sans-serif;
+        color: $color-text;
+        font-size: $font-size-text;
+        padding-left: 65px;
+    }
+
+    a:hover {
+        color: $color-black;
     }
 }
 
