@@ -386,7 +386,20 @@ a {
     background-color: #edeff159;
 
     .content {
-        margin-top: 100px;
+        margin: 100px 0 70px 0;
+    }
+
+    .card {
+        box-shadow: 0 0 35px rgba(227, 227, 227, 0.65);
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin: 0 12px;
+        position: relative;
+    }
+
+    .card-inner {
+        margin-top: 50px;
+        padding: 0 60px 30px 30px;
 
         h1 {
             color: $color-green;
@@ -397,7 +410,7 @@ a {
             line-height: 96px;
             text-align: left;
             letter-spacing: 1.5px;
-            margin-bottom: 0;
+            margin: 0;
             }
 
         p.subtitle {
@@ -406,8 +419,6 @@ a {
             font-size: $font-size-text;
             font-weight: 400;
             font-style: normal;
-            letter-spacing: normal;
-            line-height: 96px;
             text-align: left;
             letter-spacing: 0.45px;
         }
@@ -422,50 +433,66 @@ a {
             line-height: 48px;
             text-align: left;
             letter-spacing: 0.45px;
-            padding-bottom: 25px;
+            padding: 25px 0;
         }
     }
 
-}
-
-.pricing .card {
-    box-shadow: 0 0 35px rgba(227, 227, 227, 0.65);
-    border-radius: 5px;
-    background-color: #ffffff;
-    margin: 0 12px;
-
-
-}
-
-.card-inner {
-    padding: 0 60px 0 30px;
-}
-
-.card-btn {
-    box-shadow: 0 0 35px rgba(227, 227, 227, 0.35);
-    border-radius: 5px;
-    background-color: $color-green;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 60px 25px 30px;
-    color: $color-white;
-
-    .btn-square, .btn-square i {
-        font-family: 'Raleway', sans-serif;
-        color: $color-white;
-        font-size: $font-size-text;
-        font-weight: 700;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: 48px;
-        text-align: left;
-        text-transform: uppercase;
-        letter-spacing: 0.45px;
+    .card-inner p::after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: #87949e19;
+        left: 50%;
+        top: 41%;
+        transform: translateX(-50%);
     }
 
+    .card-btn {
+        box-shadow: 0 0 35px rgba(227, 227, 227, 0.35);
+        border-radius: 5px;
+        background-color: $color-green;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 60px 25px 30px;
+        color: $color-white;
+
+        /*.btn-square, .btn-square i {
+            font-family: 'Raleway', sans-serif;
+            color: $color-white;
+            font-size: $font-size-text;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 48px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 0.45px;
+        }*/
+        p {
+            margin: 0;
+            padding: 0;
+            line-height: 2;
+            text-transform: uppercase;
+            font-family: 'Raleway', sans-serif;
+            color: $color-white;
+            font-size: $font-size-text;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 1.85px;
+        }
+
+        .btn-icon {
+            line-height: 2;
+        }
+
+    }
+
+
 }
 
-a.card-btn {
+
+/* a.card-btn {
     font-family: 'Raleway', sans-serif;
     color: $color-white;
     font-size: $font-size-text;
@@ -476,22 +503,8 @@ a.card-btn {
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 0.45px;
-}
+} */
 
-.card {
-    position: relative;
-}
-
-.card-inner p::after {
-    position: absolute;
-    content: '';
-    height: 1px;
-    width: 100%;
-    background-color: #87949e19;
-    left: 50%;
-    top: 39%;
-    transform: translateX(-50%);
-}
 
 /* Map */
 
@@ -535,3 +548,4 @@ a.card-btn {
         border: 2px solid $color-green;
     }
 }
+
