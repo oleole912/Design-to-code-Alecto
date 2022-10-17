@@ -71,7 +71,8 @@ a {
     height: 1068px;
     color: $color-white;
     position: relative;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center center;
 }
 
 .splash::after {
@@ -323,6 +324,8 @@ a {
 
 .section-splash1 {
     background-image: url('/images/section_splash1.jpg');
+    background-size: cover;
+    background-position: center center;
     padding-top: 180px;
 
     h2 {
@@ -577,6 +580,8 @@ a {
 
 .section-splash2 {
     background-image: url('/images/section_splash2.jpg');
+    background-size: cover;
+    background-position: center center;
     padding-top: 180px;
 
     h1 {
