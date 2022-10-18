@@ -1059,6 +1059,8 @@ input[type=checkbox] {
         width: 300px;
     }
 
+    /* Services */
+
     .services {
         .title {
             padding-bottom: 50px;
@@ -1147,5 +1149,182 @@ input[type=checkbox] {
 }
 
 @media only screen and (min-width: 769px) and (max-width:1200px) {
+    /* Global */
 
+    section {
+    padding: 50px 0;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    /* Header */
+
+    .nav__menu {
+        a {
+            margin-left: 50px;
+        }
+    }
+
+    .splash {
+        height: 100vh;
+
+    }
+
+    /* About */
+
+    .section-title {
+        font-size: 45px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+        padding: 0 40px;
+    }
+
+    .title-main::after {
+        top: 70px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        padding: 0 0 40px;
+    }
+
+    .card {
+        margin: 55px 0 10px 0;
+        width: 50%;
+
+        h2 {
+            line-height: 60px;
+        }
+
+        p {
+            line-height: 20px;
+            padding: 0 40px;
+        }
+    }
+
+    .icon i {
+        width: 90px;
+        height: 90px;
+        border-radius: 90px;
+        line-height: 90px;
+        font-size: 40px;
+    }
+
+    /* Section middle */
+
+    .section-second img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .section-third img {
+        height: 300px;
+        width: 300px;
+    }
+
+    /* Services */
+
+    .services {
+
+        .row {
+            display: flex;
+        }
+        .title {
+            padding-bottom: 50px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        .icon i {
+            margin: 10px 20px 0 0;
+        }
+    }
+
+    .services-card {
+        margin: 10px;
+
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    /* Team */
+
+    .team__photos {
+        width: 100vw;
+        justify-content: center;
+
+    }
+
+    .image {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    /* Pricing */
+
+    .pricing {
+        .card {
+            width: 40%;
+            margin-bottom: 25px;
+        }
+
+        .card__inner {
+            margin-top: 10px;
+
+            p {
+                font-size: 14px;
+                line-height: 30px;
+                padding: 0;
+            }
+        }
+
+        .card__inner p::after {
+            top: 39%;
+        }
+    }
+
+    /* Section splash2 */
+
+    .section-splash2 h1 {
+        font-size: 40px;
+        padding: 0 50px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding-top: 25px;
+    }
+
+    .footer .container {
+        display: block;
+    }
+
+    .footer__logo {
+        justify-content: center;
+        padding-bottom: 40px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .footer__menu {
+        justify-content: space-around;
+
+        a {
+            padding: 0;
+        }
+    }
 }
+
+
