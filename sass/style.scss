@@ -188,6 +188,7 @@ a {
         font-style: normal;
         letter-spacing: 0.6px;
         line-height: normal;
+        font-family: 'Raleway', sans-serif;
     }
 }
 
@@ -1322,10 +1323,12 @@ input[type=checkbox] {
         &__inner {
             h1 {
                 font-size: 45px;
-                padding: 0 60px;
+                padding: 0 120px;
+                line-height: 65px;
             }
         }
     }
+
 
     /* About */
 
@@ -1459,9 +1462,39 @@ input[type=checkbox] {
 
     /* Map */
 
+    .map.section__middle {
+        height: auto;
+    }
+
     .map {
-        .left {
-            padding: 0 20px 50px;
+        width: 100vw;
+        height: 700px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 30px;
+                padding-bottom: 30px;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+                position: unset;
+                padding: 0 20px 50px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 
@@ -1586,6 +1619,11 @@ input[type=checkbox] {
     .section-third img {
         height: 350px;
         width: 350px;
+    }
+
+    .section-splash1 h2 {
+        padding: 0 50px;
+        line-height: 50px;
     }
 
     /* Services */
