@@ -201,6 +201,7 @@ a {
 .content {
     display: flex;
     justify-content: center;
+    padding: 0 70px;
 }
 
 .section-title {
@@ -235,7 +236,7 @@ a {
 }
 
 .card {
-    margin: 155px 0 110px 0;
+    margin: 135px 0 110px 0;
 }
 
 .card h2 {
@@ -266,10 +267,10 @@ a {
 }
 
 .icon i {
-    width: 182px;
-    height: 182px;
-    border-radius: 182px;
-    line-height: 182px;
+    width: 152px;
+    height: 152px;
+    border-radius: 152px;
+    line-height: 152px;
     background-color: #87949e26;
     color: $color-text;
     text-align: center;
@@ -305,14 +306,14 @@ a {
     background-color: #edeff159;
 
     img {
-        height: 550px;
-        width: 550px
+        height: 450px;
+        width: 450px
     }
 }
 
 .section-third img {
-    height: 550px;
-    width: 550px
+    height: 450px;
+    width: 450px
 }
 
 .right {
@@ -403,7 +404,7 @@ a {
 }
 
 .services .title {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .services-card {
@@ -411,8 +412,12 @@ a {
     margin: 20px;
 
     h1 {
-        font-size: 50px;
+        font-size: 45px;
         margin-bottom: 25px;
+    }
+
+    p {
+        line-height: 40px;
     }
 }
 
@@ -433,8 +438,8 @@ a {
 
 .image {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 
     &__img {
         display: block;
@@ -515,6 +520,7 @@ a {
                 text-align: left;
                 letter-spacing: 0.45px;
                 margin-top: 0;
+
             }
 
             p {
@@ -524,7 +530,7 @@ a {
                 font-weight: 400;
                 font-style: normal;
                 letter-spacing: normal;
-                line-height: 48px;
+                line-height: 38px;
                 text-align: left;
                 letter-spacing: 0.45px;
                 padding: 20px 0;
@@ -845,6 +851,10 @@ input[type=checkbox] {
 
     /* Services */
 
+    .services .content {
+        padding: 0 7px 40px;
+    }
+
     .services {
         .title {
             padding-bottom: 50px;
@@ -890,7 +900,7 @@ input[type=checkbox] {
     /* Pricing */
 
     .pricing .card {
-        width: 80%;
+        width: 70%;
         margin-bottom: 30px;
 
         .card__inner {
@@ -906,7 +916,7 @@ input[type=checkbox] {
 
             p {
                 font-size: 16px;
-                line-height: 35px;
+                line-height: 30px;
                 padding: 0;
             }
         }
@@ -1332,6 +1342,8 @@ input[type=checkbox] {
 
     /* About */
 
+
+
     .section-title {
         font-size: 45px;
     }
@@ -1578,7 +1590,7 @@ input[type=checkbox] {
 
     .content {
         flex-wrap: wrap;
-        padding: 0 0 40px;
+        padding: 0 50px 40px;
     }
 
     .card {
@@ -1732,6 +1744,64 @@ input[type=checkbox] {
         a {
             padding: 0;
         }
+    }
+}
+
+@media (max-width: 900px) and (max-height: 440px) {
+
+    .nav {
+        padding: 0 20px;
+
+        &__logo {
+            font-size: 30px;
+
+            p {
+                margin: 0 0 15px;
+            }
+        }
+    }
+
+    .splash__inner  {
+        h1 {
+            font-size: 40px;
+
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .section__middle p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .about .content {
+        padding: 0 120px 30px;
+    }
+
+    .services .content {
+        padding: 0 60px 40px;
+    }
+
+    .pricing .content {
+        padding: 0 60px 10px;
+    }
+
+    .pricing .card__inner {
+
+        h1 {
+            font-size: 50px;
+            line-height: 70px;
+        }
+
+        p {
+            line-height: 27px;
+        }
+    }
+
+    .pricing .card-btn {
+        padding: 15px 60px;
     }
 }
 
